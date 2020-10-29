@@ -7,9 +7,10 @@ import { HelloComponent } from "./hello.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { AuthService } from "./auth.service";
 import { LoginComponent } from "./login/login.component";
+import { LoginModule } from "./login/login.module";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, LoginModule],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
   providers: [AuthService]
